@@ -1,0 +1,40 @@
+# Environment & secrets
+.env
+.env.*
+venv/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ChromaDB — local vector store, never commit this
+chroma_db/
+
+# VS Code
+.vscode/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temp test files
+test_*.py
+test_classes/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node (from docx generation)
+node_modules/
