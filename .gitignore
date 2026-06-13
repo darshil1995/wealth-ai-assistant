@@ -26,7 +26,6 @@ chroma_db/
 htmlcov/
 
 # Temp test files
-test_*.py
 test_classes/
 
 # OS files
