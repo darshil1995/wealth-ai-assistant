@@ -8,19 +8,19 @@ Designed for financial institutions where auditability, compliance, and accuracy
 
 ## What It Does
 
-A wealth advisor types a question like _"What is the risk profile of the Vanguard S&P 500 ETF?"_ and the system answers using the actual prospectus — not the LLM's training data. Every answer includes citations showing the exact document and page number that supported it.
+A wealth advisor types a question like _"What is the risk profile of the Vanguard S&P 500 ETF?"_ and the system answers using the actual prospectus, not the LLM's training data. Every answer includes citations showing the exact document and page number that supported it.
 
 ---
 
 ## Key Features
 
-- **Hybrid Retrieval** — Vector search (ChromaDB) + BM25 keyword search merged with Reciprocal Rank Fusion
-- **PII Redaction** — Compliance gate using Microsoft Presidio strips names, SINs, emails, and phone numbers before any text reaches the LLM
-- **Prompt Injection Protection** — Defends against both direct (query) and indirect (document) injection attacks
-- **Versioned Prompts** — Prompts stored as YAML files outside the codebase — auditable, rollback-ready
-- **Structured Citations** — Every answer includes source document, page number, and supporting excerpt
-- **MCP Server** — Exposes the pipeline as a tool for AI agents via Anthropic's Model Context Protocol
-- **REST API** — FastAPI with `/query`, `/ingest`, and `/documents` endpoints
+- **Hybrid Retrieval** - Vector search (ChromaDB) + BM25 keyword search merged with Reciprocal Rank Fusion
+- **PII Redaction** - Compliance gate using Microsoft Presidio strips names, SINs, emails, and phone numbers before any text reaches the LLM
+- **Prompt Injection Protection** - Defends against both direct (query) and indirect (document) injection attacks
+- **Versioned Prompts** - Prompts stored as YAML files outside the codebase - auditable, rollback-ready
+- **Structured Citations** - Every answer includes source document, page number, and supporting excerpt
+- **MCP Server** - Exposes the pipeline as a tool for AI agents via Anthropic's Model Context Protocol
+- **REST API** - FastAPI with `/query`, `/ingest`, and `/documents` endpoints
 
 ---
 
@@ -28,11 +28,11 @@ A wealth advisor types a question like _"What is the risk profile of the Vanguar
 
 | Technology | Purpose |
 |---|---|
-| PyMuPDF (fitz) | PDF loading — best for complex financial document layouts |
+| PyMuPDF (fitz) | PDF loading - best for complex financial document layouts |
 | ChromaDB | Local vector store with cosine similarity |
-| BM25Okapi | Keyword search — runs locally, no API cost |
+| BM25Okapi | Keyword search - runs locally, no API cost |
 | Reciprocal Rank Fusion | Merges vector and BM25 results by rank position |
-| Microsoft Presidio | PII detection and redaction — runs fully locally |
+| Microsoft Presidio | PII detection and redaction - runs fully locally |
 | OpenAI GPT-4o | Answer generation at temperature 0.0 |
 | OpenAI text-embedding-3-small | Chunk and query embeddings |
 | FastAPI + uvicorn | REST API server |
@@ -98,12 +98,12 @@ wealth-ai-assistant/
 ### Prerequisites
 
 - Python 3.11+
-- An OpenAI API key — get one at [platform.openai.com](https://platform.openai.com)
-- Load at least $5 credit — the entire project costs ~$1–3 in API calls
+- An OpenAI API key - get one at [platform.openai.com](https://platform.openai.com)
+- Load at least $5 credit - the entire project costs ~$1–3 in API calls
 
 ---
 
-### Step 1 — Clone and create virtual environment
+### Step 1 - Clone and create virtual environment
 
 ```powershell
 git clone <your-repo-url>
@@ -119,7 +119,7 @@ source venv/bin/activate
 
 ---
 
-### Step 2 — Install dependencies
+### Step 2 - Install dependencies
 
 ```powershell
 pip install -r requirements.txt
@@ -130,7 +130,7 @@ python -m spacy download en_core_web_lg
 
 ---
 
-### Step 3 — Create your `.env` file
+### Step 3 - Create your `.env` file
 
 Create a file called `.env` in the project root:
 
@@ -142,26 +142,26 @@ All other settings have sensible defaults defined in `src/core/config.py`.
 
 ---
 
-### Step 4 — Add financial documents
+### Step 4 - Add financial documents
 
 Drop PDF or TXT files into the `sample_docs/` folder. Free sources:
 
-- **Apple 10-K** — go to [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar), search `AAPL`, select Annual Filings, download any 10-K PDF
-- **Vanguard prospectus** — search `Vanguard` on EDGAR and download any fund prospectus
+- **Apple 10-K** - go to [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar), search `AAPL`, select Annual Filings, download any 10-K PDF
+- **Vanguard prospectus** - search `Vanguard` on EDGAR and download any fund prospectus
 
 ---
 
-### Step 5 — Ingest documents
+### Step 5 - Ingest documents
 
 ```powershell
 python -c "from src.ingestion.pipeline import IngestionPipeline; p = IngestionPipeline(); print(p.ingest_directory('./sample_docs'))"
 ```
 
-This runs the full ingestion pipeline — loads PDFs, chunks them, embeds with OpenAI, and stores in ChromaDB. A `chroma_db/` folder appears in your project root once complete.
+This runs the full ingestion pipeline - loads PDFs, chunks them, embeds with OpenAI, and stores in ChromaDB. A `chroma_db/` folder appears in your project root once complete.
 
 ---
 
-### Step 6 — Run tests
+### Step 6 - Run tests
 
 ```powershell
 pytest tests/test_pipeline.py -v
@@ -174,7 +174,7 @@ Expected output:
 
 ---
 
-### Step 7 — Start the API server
+### Step 7 - Start the API server
 
 ```powershell
 python main.py
@@ -184,13 +184,13 @@ Server starts at `http://localhost:8000`
 
 ---
 
-### Step 8 — Open interactive API docs
+### Step 8 - Open interactive API docs
 
-Go to `http://localhost:8000/docs` in your browser. FastAPI generates interactive documentation automatically — you can test all endpoints directly from the browser.
+Go to `http://localhost:8000/docs` in your browser. FastAPI generates interactive documentation automatically - you can test all endpoints directly from the browser.
 
 ---
 
-### Step 9 — Ask a question
+### Step 9 - Ask a question
 
 **Using curl (PowerShell):**
 ```powershell
@@ -207,7 +207,7 @@ curl -X POST http://localhost:8000/query `
     {
       "document": "SPI 856 Vanguard Extended Market Index Fund.pdf",
       "page_number": 5,
-      "preview": "Annual Total Returns — Vanguard Extended Market Index Fund..."
+      "preview": "Annual Total Returns - Vanguard Extended Market Index Fund..."
     }
   ],
   "metadata": {
@@ -220,7 +220,7 @@ curl -X POST http://localhost:8000/query `
 
 ---
 
-### Step 10 — Ingest new documents via API (optional)
+### Step 10 - Ingest new documents via API (optional)
 
 ```powershell
 curl -X POST http://localhost:8000/ingest `
@@ -230,15 +230,15 @@ curl -X POST http://localhost:8000/ingest `
 
 ---
 
-### Step 11 — Run the MCP server (optional, for agent use)
+### Step 11 - Run the MCP server (optional, for agent use)
 
 ```powershell
 python src/api/mcp_server.py
 ```
 
 The MCP server exposes two tools to AI agents:
-- `query_documents` — answers financial questions using the RAG pipeline
-- `list_documents` — lists all ingested documents in the knowledge base
+- `query_documents` - answers financial questions using the RAG pipeline
+- `list_documents` - lists all ingested documents in the knowledge base
 
 ---
 
@@ -246,8 +246,8 @@ The MCP server exposes two tools to AI agents:
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/health` | Health check — returns service status |
-| POST | `/query` | Ask a question — returns answer with citations |
+| GET | `/health` | Health check - returns service status |
+| POST | `/query` | Ask a question - returns answer with citations |
 | POST | `/ingest` | Ingest a file or directory into ChromaDB |
 | GET | `/documents` | List all ingested documents and chunk counts |
 
@@ -301,10 +301,10 @@ Or via the API:
 
 ## What to Build Next
 
-- **Snowflake backend** — swap local ChromaDB for production-scale vector storage (retrieval module is already isolated — one file change)
-- **Cross-encoder re-ranking** — add a second-pass re-ranker between retrieval and the LLM for higher accuracy on critical queries
-- **Evaluation pipeline** — build a QA test set from documents and measure retrieval recall and answer accuracy automatically on every prompt version change
-- **Authentication** — add API key auth to the FastAPI endpoints before any production deployment
+- **Snowflake backend** - swap local ChromaDB for production-scale vector storage (retrieval module is already isolated - one file change)
+- **Cross-encoder re-ranking** - add a second-pass re-ranker between retrieval and the LLM for higher accuracy on critical queries
+- **Evaluation pipeline** - build a QA test set from documents and measure retrieval recall and answer accuracy automatically on every prompt version change
+- **Authentication** - add API key auth to the FastAPI endpoints before any production deployment
 
 ---
 
