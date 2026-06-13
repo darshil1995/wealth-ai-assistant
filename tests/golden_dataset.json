@@ -1,0 +1,322 @@
+[
+  {
+    "id": "aapl_001",
+    "question": "What was Apple's total net sales for fiscal year 2025?",
+    "expected_answer": "Apple's total net sales for fiscal year 2025 were $416,161 million ($416.2 billion), representing a 6% increase from $391,035 million in fiscal 2024.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 32,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_002",
+    "question": "What was Apple's net income for fiscal year 2025?",
+    "expected_answer": "Apple's net income for fiscal year 2025 was $112,010 million ($112 billion), up from $93,736 million in fiscal 2024.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 41,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_003",
+    "question": "What were Apple's basic and diluted earnings per share in fiscal 2025?",
+    "expected_answer": "Apple's basic earnings per share were $7.49 and diluted earnings per share were $7.46 for fiscal year 2025.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 41,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_004",
+    "question": "How much did Apple spend on research and development in fiscal 2025?",
+    "expected_answer": "Apple spent $34,550 million on research and development in fiscal 2025, representing 8% of total net sales and a 10% increase from $31,370 million in fiscal 2024.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 33,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_005",
+    "question": "What is Apple's quarterly dividend per share as of September 2025?",
+    "expected_answer": "Apple's quarterly cash dividend was $0.26 per share as of September 27, 2025. The dividend was raised from $0.25 to $0.26 per share beginning in May 2025.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 37,
+    "category": "dividends"
+  },
+  {
+    "id": "aapl_006",
+    "question": "How much did Apple return to shareholders through dividends in fiscal 2025?",
+    "expected_answer": "Apple paid dividends and dividend equivalents of $15.4 billion during fiscal 2025. The company also repurchased $89.3 billion of its common stock during the same period.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 37,
+    "category": "dividends"
+  },
+  {
+    "id": "aapl_007",
+    "question": "What was Apple's iPhone revenue in fiscal 2025?",
+    "expected_answer": "Apple's iPhone net sales were $209,586 million in fiscal 2025, a 4% increase from $201,183 million in fiscal 2024. The increase was due to higher net sales of Pro models.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 32,
+    "category": "products"
+  },
+  {
+    "id": "aapl_008",
+    "question": "What was Apple's Services revenue in fiscal 2025?",
+    "expected_answer": "Apple's Services net sales were $109,158 million in fiscal 2025, a 14% increase from $96,169 million in fiscal 2024. Growth was primarily driven by higher net sales from advertising, the App Store and cloud services.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 32,
+    "category": "products"
+  },
+  {
+    "id": "aapl_009",
+    "question": "What is Apple's total gross margin percentage for fiscal 2025?",
+    "expected_answer": "Apple's total gross margin percentage was 46.9% in fiscal 2025, up from 46.2% in fiscal 2024. Products gross margin was 36.8% and Services gross margin was 75.4%.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 33,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_010",
+    "question": "How much cash and marketable securities does Apple hold?",
+    "expected_answer": "As of September 27, 2025, Apple held cash, cash equivalents and marketable securities totaling $132.4 billion, including $35,934 million in cash and cash equivalents.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 35,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_011",
+    "question": "What share repurchase program did Apple announce in May 2025?",
+    "expected_answer": "In May 2025, Apple announced a new share repurchase program of up to $100 billion. During fiscal 2025, Apple repurchased $89.3 billion of its common stock and repurchased 402 million shares.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 37,
+    "category": "shareholders"
+  },
+  {
+    "id": "aapl_012",
+    "question": "How many full-time employees does Apple have?",
+    "expected_answer": "As of September 27, 2025, Apple had approximately 166,000 full-time equivalent employees.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 8,
+    "category": "business"
+  },
+  {
+    "id": "aapl_013",
+    "question": "What are Apple's main products?",
+    "expected_answer": "Apple's main products include iPhone (smartphones), Mac (personal computers including MacBook Air, MacBook Pro, iMac, Mac mini, Mac Studio and Mac Pro), iPad (tablets), and Wearables, Home and Accessories (including Apple Watch, AirPods, Apple Vision Pro, Apple TV and HomePod). Apple also offers a range of Services.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 4,
+    "category": "business"
+  },
+  {
+    "id": "aapl_014",
+    "question": "What is Apple's effective tax rate for fiscal 2025?",
+    "expected_answer": "Apple's effective tax rate for fiscal 2025 was 15.6%, lower than the statutory federal income tax rate of 21% and lower compared to 24.1% in fiscal 2024, primarily due to a lower effective tax rate on foreign earnings.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 35,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_015",
+    "question": "What were Apple's total assets as of September 27, 2025?",
+    "expected_answer": "Apple's total assets were $359,241 million as of September 27, 2025, compared to $364,980 million as of September 28, 2024.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 43,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_016",
+    "question": "What legal proceedings is Apple currently facing?",
+    "expected_answer": "Apple is facing several legal proceedings including: a European Commission Digital Markets Act investigation with a EUR 500 million fine in April 2025, a DOJ civil antitrust lawsuit filed in March 2024 alleging monopolization in smartphone markets, and an Epic Games lawsuit resulting in a court order preventing Apple from imposing commissions on purchases made outside apps.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 26,
+    "category": "legal"
+  },
+  {
+    "id": "aapl_017",
+    "question": "What was Apple's net sales in the Americas segment for fiscal 2025?",
+    "expected_answer": "Apple's Americas net sales were $178,353 million in fiscal 2025, a 7% increase from $167,045 million in fiscal 2024, primarily due to higher net sales of iPhone and Services.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 31,
+    "category": "segments"
+  },
+  {
+    "id": "aapl_018",
+    "question": "What was Apple's Greater China net sales performance in fiscal 2025?",
+    "expected_answer": "Apple's Greater China net sales decreased 4% to $64,377 million in fiscal 2025, down from $66,952 million in fiscal 2024, primarily due to lower net sales of iPhone partially offset by higher net sales of Mac.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 31,
+    "category": "segments"
+  },
+  {
+    "id": "aapl_019",
+    "question": "What new iPhone models did Apple announce in fiscal 2025?",
+    "expected_answer": "In the fourth quarter of fiscal 2025, Apple announced iPhone 17, iPhone Air, iPhone 17 Pro and iPhone 17 Pro Max. Earlier in fiscal 2025, the iPhone 16e was announced in the second quarter.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 30,
+    "category": "products"
+  },
+  {
+    "id": "aapl_020",
+    "question": "What is Apple's outstanding term debt as of September 2025?",
+    "expected_answer": "As of September 27, 2025, Apple had outstanding fixed-rate notes with an aggregate principal amount of $91.3 billion, with $12.4 billion payable within 12 months and $78.3 billion as non-current term debt.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 35,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_021",
+    "question": "What is Apple's five year cumulative total shareholder return as of September 2025?",
+    "expected_answer": "Apple's five-year cumulative total shareholder return from September 2020 to September 2025 was $234 on an initial $100 investment (calculated on a dividend-reinvested basis), compared to $217 for the S&P 500 Index and $287 for the Dow Jones U.S. Technology Total Stock Market Index.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 29,
+    "category": "shareholders"
+  },
+  {
+    "id": "aapl_022",
+    "question": "What are the main risk factors Apple faces related to macroeconomic conditions?",
+    "expected_answer": "Apple's main macroeconomic risk factors include adverse economic conditions such as slow growth, high unemployment, inflation, tighter credit, higher interest rates and currency fluctuations which can impact consumer confidence and demand. Apple also faces risks from political events, trade disputes, geopolitical tensions, tariffs (including new U.S. tariffs announced in the second quarter of 2025 on imports from China, India and other countries), natural disasters and public health issues.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 9,
+    "category": "risks"
+  },
+  {
+    "id": "aapl_023",
+    "question": "How much did Apple pay in income taxes in fiscal 2025?",
+    "expected_answer": "Apple's provision for income taxes was $20,719 million in fiscal 2025, significantly lower than $29,749 million in fiscal 2024. Apple paid $43,369 million in cash for income taxes net during fiscal 2025.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 35,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_024",
+    "question": "What is Apple's operating income for fiscal 2025?",
+    "expected_answer": "Apple's total operating income was $133,050 million in fiscal 2025, up from $123,216 million in fiscal 2024. Americas contributed $72,480 million and Europe contributed $47,739 million as the two largest segments.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 64,
+    "category": "financials"
+  },
+  {
+    "id": "aapl_025",
+    "question": "What is Apple's manufacturing strategy and where are products manufactured?",
+    "expected_answer": "Apple relies heavily on outsourcing partners for manufacturing. A significant majority of manufacturing is performed by outsourcing partners located primarily in China mainland, India, Japan, South Korea, Taiwan and Vietnam. Apple also sources from partners and facilities located in the U.S. The Company has outsourced much of its transportation and logistics management.",
+    "expected_source": "aapl-20250927.pdf",
+    "expected_page": 12,
+    "category": "business"
+  },
+  {
+    "id": "vanguard_001",
+    "question": "What is the investment objective of the Vanguard Extended Market Index Fund?",
+    "expected_answer": "The Vanguard Extended Market Index Fund seeks to track the performance of a benchmark index that measures the investment return of small- and mid-capitalization stocks.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 2,
+    "category": "fund_overview"
+  },
+  {
+    "id": "vanguard_002",
+    "question": "What is the total annual fund operating expense for Vanguard Extended Market Index Fund Institutional Shares?",
+    "expected_answer": "The total annual fund operating expenses for Institutional Shares is 0.04%, consisting of Management Fees of 0.03% and Other Expenses of 0.01%. For Institutional Plus Shares the total is 0.035%.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 2,
+    "category": "fees"
+  },
+  {
+    "id": "vanguard_003",
+    "question": "What index does the Vanguard Extended Market Index Fund track?",
+    "expected_answer": "The Vanguard Extended Market Index Fund tracks the S&P Completion Index, a broadly diversified index of stocks of small and mid-size U.S. companies.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 3,
+    "category": "fund_overview"
+  },
+  {
+    "id": "vanguard_004",
+    "question": "What were the 1 year, 5 year and 10 year average annual total returns for Vanguard Extended Market Index Fund Institutional Shares before taxes?",
+    "expected_answer": "The average annual total returns for Vanguard Extended Market Index Fund Institutional Shares before taxes for periods ended December 31, 2025 were: 1 Year: 11.42%, 5 Years: 6.20%, and 10 Years: 11.02%.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 5,
+    "category": "performance"
+  },
+  {
+    "id": "vanguard_005",
+    "question": "What was the highest quarterly return for the Vanguard Extended Market Index Fund and when did it occur?",
+    "expected_answer": "The highest quarterly return for the Vanguard Extended Market Index Fund was 31.15%, which occurred in the quarter ended June 30, 2020.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 5,
+    "category": "performance"
+  },
+  {
+    "id": "vanguard_006",
+    "question": "What was the lowest quarterly return for the Vanguard Extended Market Index Fund and when did it occur?",
+    "expected_answer": "The lowest quarterly return for the Vanguard Extended Market Index Fund was -27.99%, which occurred in the quarter ended March 31, 2020.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 5,
+    "category": "performance"
+  },
+  {
+    "id": "vanguard_007",
+    "question": "What is the minimum investment amount for Vanguard Extended Market Index Fund Institutional Shares?",
+    "expected_answer": "The minimum investment amount required to open a Fund account for Institutional Shares is generally $5 million. For Institutional Plus Shares the minimum is $100 million. The minimum investment to add to an existing fund account is generally $1.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 6,
+    "category": "purchase"
+  },
+  {
+    "id": "vanguard_008",
+    "question": "Are there any sales charges or redemption fees for the Vanguard Extended Market Index Fund?",
+    "expected_answer": "No. The Vanguard Extended Market Index Fund has no Sales Charge on Purchases, no Purchase Fee, no Sales Charge on Reinvested Dividends, and no Redemption Fee for both Institutional Shares and Institutional Plus Shares.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 2,
+    "category": "fees"
+  },
+  {
+    "id": "vanguard_009",
+    "question": "What are the main risks of investing in the Vanguard Extended Market Index Fund?",
+    "expected_answer": "The main risks include: General Market Risk (economic, political and regulatory factors affecting markets), Equity Markets Risk (cyclical fluctuations in stock values), Market Capitalization Risk (small and mid-cap stocks are historically more volatile), Index Investing Risk (tracking error risk and potential underperformance vs active management), and Concentration Risk (if the Target Index becomes concentrated in an industry the fund may be negatively impacted).",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 3,
+    "category": "risks"
+  },
+  {
+    "id": "vanguard_010",
+    "question": "What was the Vanguard Extended Market Index Fund return after taxes on distributions for the 10 year period?",
+    "expected_answer": "The Vanguard Extended Market Index Fund Institutional Shares return after taxes on distributions for the 10-year period ended December 31, 2025 was 10.61%. The return after taxes on distributions and sale of fund shares was 8.99% for the same period.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 5,
+    "category": "performance"
+  },
+  {
+    "id": "vanguard_011",
+    "question": "Who are the portfolio managers of the Vanguard Extended Market Index Fund?",
+    "expected_answer": "The Vanguard Extended Market Index Fund has three portfolio managers: Nick Birkett CFA (co-managing since 2023), Michelle Louie CFA Principal of Vanguard (co-managing since 2023), and Walter Nejman (co-managing since 2025). They manage the fund through Vanguard Capital Management (VCM), a wholly owned subsidiary of The Vanguard Group.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 6,
+    "category": "management"
+  },
+  {
+    "id": "vanguard_012",
+    "question": "What was the Vanguard Extended Market Index Fund portfolio turnover rate?",
+    "expected_answer": "During the most recent fiscal year, the Vanguard Extended Market Index Fund's portfolio turnover rate was 12% of the average value of its portfolio.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 3,
+    "category": "fund_overview"
+  },
+  {
+    "id": "vanguard_013",
+    "question": "How does the Vanguard Extended Market Index Fund invest in its target index?",
+    "expected_answer": "The Fund employs an indexing investment approach and invests at least 80% of its net assets in the stocks that make up the S&P Completion Index. The Fund invests by sampling the Target Index, meaning it holds a range of securities that in the aggregate approximates the full Target Index in terms of key risk factors and other characteristics rather than holding every security in the index.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 3,
+    "category": "strategy"
+  },
+  {
+    "id": "vanguard_014",
+    "question": "What was the 1 year return of the S&P Completion Index for the period ended December 31, 2025?",
+    "expected_answer": "The S&P Completion Index returned 11.32% for the 1 year period ended December 31, 2025, reflecting no deduction for fees, expenses or taxes. This compares to the fund's Institutional Shares return of 11.42% before taxes for the same period.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 5,
+    "category": "performance"
+  },
+  {
+    "id": "vanguard_015",
+    "question": "What is the cost example for investing $10,000 in Vanguard Extended Market Index Fund Institutional Shares over 10 years?",
+    "expected_answer": "Based on the cost examples assuming a $10,000 investment with a 5% annual return and constant operating expenses, the cost for Institutional Shares would be $4 after 1 year, $13 after 3 years, $23 after 5 years, and $51 after 10 years. For Institutional Plus Shares the costs are $4, $11, $20, and $45 respectively.",
+    "expected_source": "SPI 856 Vanguard Extended Market Index Fund.pdf",
+    "expected_page": 2,
+    "category": "fees"
+  }
+]
