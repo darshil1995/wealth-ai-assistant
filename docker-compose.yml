@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  wealth-ai-assistant:
+    build: .
+    container_name: wealth-ai-assistant
+    ports:
+      - "8000:8000"       # FastAPI server — visit http://localhost:8000/docs
+    env_file:
+      - .env              # Loads OPENAI_API_KEY from your local .env file
+    volumes:
+      - ./sample_docs:/app/sample_docs    # Mount your PDFs into the container
+      - ./chroma_db:/app/chroma_db        # Persist ChromaDB data between restarts
+      - ./prompts:/app/prompts            # Mount prompts so you can edit without rebuilding
+    restart: unless-stopped
