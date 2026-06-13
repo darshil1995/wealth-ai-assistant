@@ -97,9 +97,9 @@ wealth-ai-assistant/
 
 ### Prerequisites
 
-- Python 3.11+
-- An OpenAI API key - get one at [platform.openai.com](https://platform.openai.com)
-- Load at least $5 credit - the entire project costs ~$1–3 in API calls
+- Python 3.11+ (for local run) OR Docker (for containerized run)
+- An OpenAI API key — get one at [platform.openai.com](https://platform.openai.com)
+- Load at least $5 credit — the entire project costs ~$1–3 in API calls
 
 ---
 
@@ -242,6 +242,43 @@ The MCP server exposes two tools to AI agents:
 
 ---
 
+## Running with Docker
+
+The easiest way to run the project — no Python setup needed.
+
+### Step 1 — Build and start
+
+```powershell
+docker-compose up --build
+```
+
+First run takes ~5 minutes to install dependencies and download the spaCy model. Every run after that starts in seconds using the cached image.
+
+### Step 2 — Ingest your documents
+
+With the container running, open a second terminal:
+
+```powershell
+docker-compose exec wealth-ai-assistant python -c \
+  "from src.ingestion.pipeline import IngestionPipeline; p = IngestionPipeline(); print(p.ingest_directory('./sample_docs'))"
+```
+
+### Step 3 — Visit the API docs
+
+```
+http://localhost:8000/docs
+```
+
+### Step 4 — Stop the container
+
+```powershell
+docker-compose down
+```
+
+> **Note:** Your ChromaDB data and ingested documents persist between restarts via Docker volumes — you don't need to re-ingest every time.
+
+---
+
 ## API Endpoints
 
 | Method | Endpoint | Description |
@@ -267,6 +304,8 @@ All settings are in `src/core/config.py` and can be overridden in `.env`:
 | `CHUNK_SIZE` | `500` | Maximum characters per chunk |
 | `CHUNK_OVERLAP` | `50` | Overlap between consecutive chunks |
 | `TOP_K_RESULTS` | `5` | Number of chunks to retrieve per query |
+
+> **Note:** When running via Docker, `CHROMA_PERSIST_DIR` is automatically set to `/app/chroma_db` by `docker-compose.yml` — no manual change needed.
 
 ---
 
